@@ -25,7 +25,7 @@ export default function Scoreboard() {
 
   if (!loaded) return null;
 
-  const hasHistory = backed.length + passed.length > 0;
+  const hasHistory = backed.length + passed.length + todayBacked.length > 0;
 
   const backfill = () => {
     const entries: Record<string, Swipe> = {};
